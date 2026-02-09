@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+.ToDo {
+  width: 420px;
+  padding: 25px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.ToDo_h1 {
+  text-align: center;
+}
+
+.ToDo_input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.ToDo_input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ToDo_input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.filters button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button.active {
+  /* background: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(10px); */
+
+  transition: 2s;
+  text-decoration: underline #fff 2px;
+  /* background: rgba(255, 255, 255, 0.4); */
+}
+
+.ToDo_ul {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow-y: auto;
+  padding: 20px 6px 20px 0px;
+
+  mask-image: linear-gradient(to bottom,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
+
+  -webkit-mask-image: linear-gradient(to bottom,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
+}
+
+
+li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.ToDo_li {
+  animation: fadeIn 0.35s ease both;
+  transform-origin: top;
+}
+
+.ToDo_li {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0.85) translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1));
+  border-radius: 10px;
+}
+
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.unline {
+  flex-wrap: wrap;
+  width: 260px;
+  overflow-x: hidden;
+}
+
+
+.button {
+  cursor: pointer;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.text_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.line {
+  text-align: start;
+  text-decoration: line-through red 2px;
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 100%;
+}
+
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn_1 {
+  width: 80px;
+  height: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(223, 234, 14, 0.21);
+  color: white;
+}
